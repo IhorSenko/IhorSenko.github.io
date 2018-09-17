@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+  <div class="container-fluid background-top">
+    <div class="row">
+     <div class="col-sm-4 col-lg-2">
+       <a class="logo" href="#"><img src="img/icons8-skyscrapers-60.png" alt=""/>TopBuild</a>
+    </div>
+     <div class="col-sm-4 col-lg-8">
+        <nav id="menu">
+            <div class="mobile-menu">
+              <span><i class="fas fa-th-list"></i></span>
+              </div>
+              <div class="links">
+                <a href="index.html">Home</a>
+                <a href="search.html">Search</a>
+                <a href="item.html">Item</a>
+              </div>
+      </nav> 
+     </div>
+     <div class="col-sm-4 col-lg-2">
+       <ul class="log-reg">
+        <a class="sing-up"><i class="fa fa-user-circle fa-fw fa-lg"></i></a>
+         <div>
+          <li class="log-up"><a>Zaloguj się <i class="fas fa-arrow-alt-circle-right"></i></a></li>
+          <li class="reg-up"><a>Załóż konto <i class="fas fa-arrow-alt-circle-right"></i></a></li>
+        </div>
+       </ul>
+      <!--<a class="sing-up" href="regi.html"><i class="fa fa-user-circle fa-fw fa-lg"></i>Zaloguj się</a>-->
+     </div>
+    </div>
+  </div>
+  <div class="sign-form">
+      <span class="modal_close"><i class="fas fa-times-circle"></i></span> <!-- Кнoпкa зaкрыть-->
+      <div class="profile">
+          <div class="card">
+              <i class="fas fa-address-card"></i>
+          </div>
+        <p>Załóż konto</p>
+          <div>
+              <i class="fas fa-chevron-circle-right"></i>
+          </div>
+      </div>
+      <div class="profile-form">
+      <form method="post" action="">
+        <div>
+          <label for="name">Imię</label>
+          <input type="text" name="name" required>
+        </div>
+        <div>
+          <label for="last-name">Nazwisko</label>
+          <input type="text" name="last-name" required>
+          </div>
+        <div class="radio">
+          <span>Płeć</span>
+          <label>
+            <input type="radio" name="sex" value="mężczyzna">mężczyzna
+            <div class="radio-control male"></div>
+          </label>
+          <label>
+            <input type="radio" name="sex" value="kobieta">kobieta
+            <div class="radio-control female"></div>
+          </label>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Hasło</label>
+            <input type="password" name="password" required minlength="6">
+          </div>
+          <div class="new-offer-button">
+              <div><a class="btn-1"><button type="submit">Odprawić</button>Odprawić</a></div>
+          </div>
+      </form>
+      </div> 
+  </div>
+  <div class="login">
+      <span class="modal_close"><i class="fas fa-times-circle"></i></span> <!-- Кнoпкa зaкрыть-->
+      <div class="profile">
+          <div class="card">
+              <i class="fas fa-address-card"></i>
+          </div>
+        <p>Zaloguj się</p>
+          <div>
+              <i class="fas fa-chevron-circle-right"></i>
+          </div>
+          <a href="#">Nie pamiętasz hasła?</a>
+      </div>
+      <div class="profile-form">
+      <form method="post" action="">
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" required>
+        </div>
+        <div>
+            <label for="phone-number">Hasło</label>
+            <input type="password" name="password" required minlength="6">
+          </div>
+          <div class="new-offer-button">
+              <div><a class="btn-1"><button type="submit">Zaloguj się</button>Zaloguj się</a></div>
+          </div>
+      </form>
+      </div> 
+  </div>
+  <div class="overlay"></div><!-- Пoдлoжкa -->
+</header>
+        
+<div class="container build-wrapper">
+    <div class="row justify-content-center">
+        <div class="build-title">
+            <h3>Grochów, ul. Chrzanowskiego Warszawa</h3>
+        </div>
+        <div class="build">
+<svg viewBox="0 0 960 600">
+    <path class="part" d="m 272.5,207 23,184.5 L 252,415 152,341.5 132,277 l 6,1 -30.5,-154.5 22,-2 -1.5,-17 32.5,-4.5 23.5,50.5 z"
+     data-realization="2022"
+     data-number-building="4"
+     data-price-m2="5300"
+     data-metr2="34-168"
+     data-rooms="1-6"
+     data-floors="14"
+     ></path>
+    <path class="part" d="m 645.58849,367.36187 -4.24264,202.23254 -48.79037,25.45584 -65.05382,-45.96194 -82.73149,-27.57716 -2.12132,4.94974 -20.5061,-9.19238 -26.16295,-24.04163 1.41421,-3.53554 -62.9325,-50.20458 -16.97057,-42.42641 -18.38477,-162.63456 30.40559,-3.53553 1.41421,4.24264 2.82843,-0.70711 -2.12132,-4.24264 v -16.97056 l 28.28427,-3.53553 19.09188,32.52691 -3.53553,2.12132 29.69849,17.67767 2.82842,-2.12132 25.45585,15.55635 3.53553,62.9325 8.48528,-8.48528 -1.41421,-21.92031 25.45584,-15.55635 5.65686,2.12132 1.41421,-4.24264 26.87006,8.48528 -2.82843,3.53554 72.12489,20.50609 26.87006,16.26346 -4.24264,2.82842 16.97056,9.8995 4.94975,-2.82843 z"
+    data-realization="2020"
+    data-number-building="4A"
+    data-price-m2="5100"
+    data-metr2="38-120"
+    data-rooms="1-5"
+    data-floors="14" 
+    ></path>
+
+    <path class="part" d="m 672.45763,174.15254 -5.08475,155.08475 -6.35593,3.17796 -0.63559,20.97458 -18.43221,10.80509 -10.80508,-6.35594 -13.98305,-8.26271 -5.08475,2.54237 -14.61864,-9.53389 3.81356,-3.17797 -27.9661,-17.16102 -20.33899,-4.44915 -14.61865,-22.24576 -2.54237,-153.81357 29.23729,-2.54237 0.6356,-15.88983 27.33051,-3.81356 26.05932,29.87289 -3.81356,1.27118 27.33051,12.71187 5.72034,-1.90678 z"
+    data-realization="2019"
+    data-number-building="6"
+    data-price-m2="4800"
+    data-metr2="34-92"
+    data-rooms="1-4"
+    data-floors="14"  
+    ></path>
+	
+    <path class="part" d="m 795,119.31876 -13.5,148.5 -6.5,4.5 -0.5,24 -7.5,3.5 v 7.5 l -14.5,8 -68,-36 -17.5,-19 4,-87 -14.5,-7.5 3.5,-72.000001 26,-3 v -16 l 27,-2.5 27,25 -3,3.000001 13,5 2,-2 1.5,0.5 -0.5,2 11.5,5.5 5.5,-1.5 z"
+    data-realization="2018"
+    data-number-building="6A"
+    data-price-m2="4800"
+    data-metr2="34-92"
+    data-rooms="1-4"
+    data-floors="14" 
+    ></path>
+	
+    <path class="part" d="m 907.62712,74.364406 -17.79661,142.372884 -5.72034,2.54237 -4.44915,25.42373 -3.17797,1.27119 -1.27118,8.8983 -11.44068,6.99153 -75.6356,-34.95763 10.1695,-107.41526 -29.23729,-12.07627 5.08474,-55.9322 24.78814,-2.465262 1.27119,-14.060161 21.90538,-2.279102 29.50055,20.261873 -3.44123,3.813559 31.22118,10.618924 4.07683,-2.542373 z"
+    data-realization="2018"
+    data-number-building="6B"
+    data-price-m2="4800"
+    data-metr2="34-92"
+    data-rooms="1-4"
+    data-floors="14" 
+    ></path>
+
+    <path class="part1" d="m 960.27014,243.4322 -173.90022,95.97458 -5.00432,65.4661 27.52378,15.25424 -65.05619,36.86441 -0.62555,20.33898 120.72928,73.72881 76.31593,-53.38983 20.64282,11.44068 z"
+     data-name="Centrum handlowe"
+    ></path>
+
+    <path class="part1" d="m 526.73463,209.44336 -55.7296,-137.975717 -90.78532,34.156857 11.68524,23.37047 -43.1455,4.49433 -15.2807,-48.538689 -32.35912,4.04489 2.24716,7.640349 -6.29206,1.348297 3.14603,17.078423 -30.11196,6.29206 22.02218,103.81885 5.84262,8.98865 32.80856,-4.94376 -1.79773,-17.97729 30.56139,-2.6966 34.58411,21.12332 z"
+        data-name="Szkoła podstawowa"
+    ></path>
+	</svg>
+    <img src="img/view-item/build-item.png" alt=""/>
+        <div class="build-description">
+          <h3></h3>
+          <div>
+          <span>Termin realizacji</span>  
+          <i class="far fa-calendar-alt"></i>
+          <span class="realization"></span>
+        </div>
+        <div>
+        <span>Numer bloku</span>  
+          <i class="far">№</i>
+          <span class="number-building"></span>
+        </div>
+        <div>
+            <span>Ceny m<sup>2</sup></span>
+            <i class="fas fa-dollar-sign"></i>
+            <span class="price-m2"></span>
+        </div>
+        <div>
+            <span> Metraże <sup>2</sup></span>
+            <i class="fas fa-ruler-combined"></i>
+            <span class="metr2"></span>
+        </div>
+        <div>
+            <span>Liczba pokoi</span>
+            <i class="fas fa-door-open"></i>
+            <span class="rooms"></span>
+        </div>
+        <div>
+        <span>liczba pięter</span>
+        <i class="fas fa-building"></i>
+        <span class="floors"></span>
+            </div>  
+        </div>          
+        </div>
+        <div class="col-12">
+        <div class="maps-title">
+        <div><a class="btn-1"><i class="fas fa-map-marker-alt"></i>Pokaż na mapie</a></div>
+        </div>
+        <div id="map"></div>     
+        </div>
+    </div>
+        <div class="item-slider">
+                <img src="img/view-item/0_a58dc_86868dbb_orig.jpg" alt="">
+                <img src="img/view-item/0_c51c6_a8f90a1a_orig.jpg" alt="">
+                <img src="img/view-item/53f5bd1e9f7959b55f7a8ca4cebfbad8.jpg" alt="">
+        </div>
+</div>        
+        
+<div class="container-fluid">
+    <div class="row justify-content-center apartment-wrapper">
+            <div class="inline-item-table col-10">
+                    <div>
+                      <span>Termin realizacji</span>  
+                      <i class="far fa-calendar-alt"></i>
+                      <span>2018-2022</span>
+                    </div>
+                    <div>
+                        <span>Ceny m<sup>2</sup> od:</span>
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>4 800</span>
+                    </div>
+                    <div>
+                        <span> Metraże</span>
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>od 34 do 120 m<sup>2</sup></span>
+                    </div>
+                    <div>
+                        <span>Liczba pokoi</span>
+                        <i class="fas fa-door-open"></i>
+                        <span>od 1 do 4</span>
+                    </div>
+                    <div>
+                        <span>Miej. postojowe:</span>
+                        <i class="fas fa-parking"></i>
+                        <span>tak</span>
+                    </div>
+              </div>
+              <div class=" col-12">
+                  <div class="apartment-plan-title">
+                      <p>Plany mieszkań</p>
+                  </div>
+                <div class="apartment-plan">
+                  <img src="img/view-item/plan/1-4-7-10-13.png" class="minimized" alt="" title="powiększ">
+                  <img src="img/view-item/plan/32-35-38-41-44.png" class="minimized" alt="" title="powiększ">
+                  <img src="img/view-item/plan/46-49-52-55-58.png" class="minimized" alt="" title="powiększ">
+                  <img src="img/view-item/plan/3-6-9-12-15.png" class="minimized" alt="" title="powiększ">
+                  <img src="img/view-item/plan/61-64-67-70-73.png" class="minimized" alt="" title="powiększ">
+                  <img src="img/view-item/plan/87-90.png" class="minimized" alt="" title="powiększ">
+                  </div>
+                  <div class="overlay-img"></div><!-- Пoдлoжкa -->
+              </div>        
+    </div>
+</div>
+
+
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class=" col-sm-12 col-lg-10 descripton-wrapper">
+            <div class=" col-12 inline-item-description">
+            </div>
+            <div class="col-12 item-addinformation">
+                <h3>Dodatkowe informacje</h3>
+                <div><span> Miejsca postojowe:</span><p>podziemna hala garażowa, miejsca postojowe naziemne</p></div>
+                <div><span>Udogodnienia:</span> <p>windy</p></div> 
+            </div>
+            <div class="col-12 item-description-full">
+                <h3>Opis inwestycji</h3>
+                <p>Signum - nowoczesne i energooszczędne budownictwo to szansa dla ludzi związanych emocjonalnie i społecznie z obszarami Gdyni Północ. Signum to alternatywa między innymi dla tych, którzy cenią sobie dotychczasową lokalizację, a chcieliby mieszkać w bardziej komfortowym, nowoczesnym osiedlu. To także oferta dla tych, którzy mają dość wysokich opłat mieszkaniowych wynikających z eksploatacji kilkudziesięcioletnich budynków.</p>
+                <p>Signum to budynki: Cumulus, Nimbus i Stratus. Nazwa rzeczywiście oddaje charakter projektu: przestrzeń i światło - kawałek nieba w mieszkaniu. Ponadstandardowo wysokie pomieszczenia (2,70 m!) i okna sięgające podłogi sprawiają, że w domu jest dużo światła i powietrza; przestrzeń życiowa staje się jaśniejsza i pozwala na ciekawe rozwiązania aranżacyjne.</p>
+                <p>Zespół tworzą trzy ośmiopiętrowe budynki z podziemnymi halami garażowymi, 153 mieszkaniami i zewnętrznymi ogólnodostępnymi parkingami. W budynku Cumulus zaprojektowano 54 mieszkania, halę garażową z 26-cioma miejscami parkingowymi. Hala garażowa pod budynkami Nimbus (45 mieszkań) i Stratus (54 mieszkań) mieści 180 miejsc postojowych i komórki lokatorskie. Wszystkie mieszkania są dostępne bezpośrednio z poziomu garaży osobnymi, cichobieżnymi windami i klatkami schodowymi.</p>
+            </div>
+        </div>
+            <div class="col-sm-12 col-lg-10">
+            <div class="item-form-wrapper">
+            <div class="item-form-contackt">
+                <div><p>Kontakt</p></div>
+                <div><img src="/img/icons8-skyscrapers-60.png" alt=""/></div>
+                <div><p>TopBuild</p></div>
+            </div>
+            <div class="item-form">
+            <form action="send.php" method="post">
+                <div>
+                    <input type="text" name="name" required placeholder="&#xF007; wpisz imię">
+                </div>
+                <div>
+                    <textarea name="description" required placeholder="Interesuje mnie oferta numer: 17/28, Mieszkanie na sprzedaż, Gdańsk, Piecki-Migowo, Morena, ul. Piecewska, powierzchnia: 68,8 m², pokoje: 3. Proszę o kontakt."></textarea>
+                </div>
+                <div>
+                    <input type="email" name="email" required placeholder="&#xF0E0; wpisz E-mail">
+                </div>
+                <div>
+                    <input type="tel" name="tel" required minlength="9" placeholder="&#xF098; nr telefonu">
+                </div>
+                <div class="new-offer-button">
+                <div><a class="btn-1"><button type="submit">Wyślij wiadomość</button>Wyślij wiadomość</a></div>
+                </div>
+            </form>
+            </div>
+            </div>
+            </div>
+        </div> 
+    </div>   
+
+
+<footer id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="social-media">
+                <div><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+                <div><a href="#"><i class="fab fa-twitter-square"></i></a></div>
+                <div><a href="#"><i class="fab fa-instagram"></i></a></div>
+              </div>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li><p>Grupa TopBuild</p></li>
+                    <li><a href="#">O nas</a></li>
+                    <li><a href="#"> Relacje inwestorskie</a></li>
+                    <li><a href="#">Dla reklamodawców</a></li>
+                    <li><a href="#">Kup baner do wywieszenia</a></li>
+                  </ul>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li><p>Kontakt</p></li>
+                    <li><i class="fas fa-phone"></i><a href="tel:+48 788 294 394">+48 788 294 394</a></li>
+                    <li><i class="far fa-envelope"></i><a href="mailto:top-build@buro.pl">top-build@buro.pl</a></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="autor">
+        <address>© 2018 Ihor Senko</address>
+      </div>
+      <script type="text/javascript" src="js/libs.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoNlXReq4lmJgcUgIfIQ1O2MqgIvlcDts&callback=initMap">
+      </script>
+</body>
+</html>
