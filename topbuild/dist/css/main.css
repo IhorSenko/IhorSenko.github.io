@@ -767,6 +767,21 @@ body {
   .login p {
     margin-bottom: 10px !important; }
 
+    .profile-form, .item-form input:focus::-webkit-input-placeholder, .profile-form, .item-form textarea:focus::-webkit-input-placeholder {
+      color: transparent !important; }
+    
+    .profile-form, .item-form input:focus::-moz-placeholder, .profile-form, .item-form textarea:focus::-moz-placeholder {
+      color: transparent !important; }
+    
+    .profile-form, .item-form input:focus:-ms-input-placeholder, .profile-form, .item-form textarea:focus:-ms-input-placeholder {
+      color: transparent !important; }
+    
+    .profile-form, .item-form input:focus::-ms-input-placeholder, .profile-form, .item-form textarea:focus::-ms-input-placeholder {
+      color: transparent !important; }
+    
+    .profile-form, .item-form input:focus::placeholder, .profile-form, .item-form textarea:focus::placeholder {
+      color: transparent !important; }
+
 .profile-form, .item-form {
   position: relative;
   float: left;
@@ -799,7 +814,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     -webkit-border-radius: 8px;
-            border-radius: 8px; }
+            border-radius: 8px;}
   .profile-form div input[type="password"], .item-form div input[type="password"] {
     margin-bottom: 2px; }
 
