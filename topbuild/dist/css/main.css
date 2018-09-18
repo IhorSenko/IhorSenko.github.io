@@ -19,6 +19,7 @@ body {
   top: 0; }
 
 .filter-background {
+  height: 100vh;
   background: url(../img/background-form.jpg) no-repeat;
   -webkit-background-size: cover;
           background-size: cover; }
