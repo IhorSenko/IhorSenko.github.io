@@ -629,3 +629,5 @@ footer {
     margin-bottom: 20px; }
     .team-wrapper .team {
       margin-bottom: 60px; } }
+      #contacts input[type="text"], #contacts input[type="email"], #contacts input[type="tel"] {
+        width: 100%;}
