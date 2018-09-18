@@ -768,19 +768,19 @@ body {
   .login p {
     margin-bottom: 10px !important; }
 
-    .item-form input:focus::-webkit-input-placeholder, .item-form textarea:focus::-webkit-input-placeholder {
+    #contacts-form input:focus::-webkit-input-placeholder, #contacts-form textarea:focus::-webkit-input-placeholder {
       color: transparent !important; }
     
-     .item-form input:focus::-moz-placeholder, .item-form textarea:focus::-moz-placeholder {
+      #contacts-form input:focus::-moz-placeholder, #contacts-form textarea:focus::-moz-placeholder {
       color: transparent !important; }
     
-    .item-form input:focus:-ms-input-placeholder, .item-form textarea:focus:-ms-input-placeholder {
+      #contacts-form input:focus:-ms-input-placeholder, #contacts-form textarea:focus:-ms-input-placeholder {
       color: transparent !important; }
     
-    .item-form input:focus::-ms-input-placeholder, .item-form textarea:focus::-ms-input-placeholder {
+      #contacts-form input:focus::-ms-input-placeholder, #contacts-form textarea:focus::-ms-input-placeholder {
       color: transparent !important; }
     
-    .item-form input:focus::placeholder, .item-form textarea:focus::placeholder {
+      #contacts-form input:focus::placeholder, #contacts-form textarea:focus::placeholder {
       color: transparent !important; }
 
 .profile-form, .item-form {
