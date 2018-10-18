@@ -283,5 +283,6 @@ body {
     height: 32px; }
   .wrapper {
     -webkit-background-size: cover;
-            background-size: cover; }
+            background-size: cover;
+            background-attachment: scroll; }
   }
