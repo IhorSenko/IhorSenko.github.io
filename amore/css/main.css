@@ -1,9 +1,44 @@
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/Open_Sans/OpenSans-Bold.ttf");
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "Myriad";
+  src: url("../fonts/Myriad Pro Regular/Myriad Pro Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "GothamBold";
+  src: url("../fonts/Gotham Bold Regular/Gotham Bold Regular.ttf");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "GothamMedium";
+  src: url("../fonts/Gotham Medium Regular/Gotham Medium Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "GothamBook";
+  src: url("../fonts/Gotham Book Regular/Gotham Book Regular.otf");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   margin: 0;
   padding: 0; }
 
 .wrapper {
-  background-image: url("../img/pizza-3007395_1920.jpg");
+  background-image: url("/img/pizza-3007395_1920.jpg");
   -webkit-background-size: 100% 100%;
           background-size: 100%;
   background-repeat: no-repeat;
@@ -126,6 +161,9 @@ body {
 .type-pizza {
   margin-bottom: 40px; }
 
+.sauce, .ingredients {
+  width: 50%; }
+
 .ingredients-and-sauce {
   display: -webkit-box;
   display: -webkit-flex;
@@ -140,8 +178,6 @@ body {
     padding: 20px 0;
     font-size: 20px;
     font-weight: 500; }
-  .ingredients-and-sauce .sauce, .ingredients-and-sauce .ingredients {
-    width: 50%; }
   .ingredients-and-sauce .ingredients {
     display: -webkit-box;
     display: -webkit-flex;
@@ -220,3 +256,61 @@ body {
 
 .title-red {
   color: #ff1414; }
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 0 20px 20px 20px; }
+  .wrapper {
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .price-pizza {
+    width: 40%; }
+  .pizza-size {
+    width: 40%; }
+  .ingredients-and-sauce {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .sauce, .ingredients {
+    width: 100%; } }
+
+@media screen and (max-width: 420px) {
+  .type-pizza-title h3 {
+    font-size: 16px; }
+  .type-pizza-title img {
+    width: 32px;
+    height: 32px; }
+  .type-pizza-title > div {
+    min-width: 50%; }
+  .price-lunch p, .price-salat p, .price-fast-food p {
+    font-size: 13px; }
+  .pizza-item h3, .name-lunch h3, .name-salat h3, .name-fast-food h3, .pizza-box-wrapeer h3, .pizza-title h3 {
+    font-size: 16px; }
+  .pizza-item p, .name-lunch p, .name-salat p, .name-fast-food p, .pizza-box-wrapeer p, .pizza-title p {
+    font-size: 13px; }
+  .price-pizza {
+    width: 50%; }
+  .pizza-size {
+    min-width: 50%; }
+    .pizza-size img {
+      width: 32px;
+      height: 32px; }
+    .pizza-size p {
+      font-size: 13px; }
+  .name-pizza {
+    width: 50%; }
+  .ingredients-and-sauce h3 {
+    font-size: 16px; }
+  .ingredients-and-sauce p {
+    font-size: 13px; }
+  .ingredients-and-sauce .ingredients-pizza-size img {
+    width: 32px;
+    height: 32px; } }
