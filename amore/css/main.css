@@ -282,6 +282,6 @@ body {
     width: 32px;
     height: 32px; }
   .wrapper {
-    -webkit-background-size: 100vh;
-            background-size: 100vh }
+    -webkit-background-size: cover;
+            background-size: cover; }
   }
