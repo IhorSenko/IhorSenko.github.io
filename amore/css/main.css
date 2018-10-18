@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/Open_Sans/OpenSans-Bold.ttf");
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "Myriad";
+  src: url("../fonts/Myriad Pro Regular/Myriad Pro Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "GothamBold";
+  src: url("../fonts/Gotham Bold Regular/Gotham Bold Regular.ttf");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "GothamMedium";
+  src: url("../fonts/Gotham Medium Regular/Gotham Medium Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "GothamBook";
+  src: url("../fonts/Gotham Book Regular/Gotham Book Regular.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  background-image: url("/img/pizza-3007395_1920.jpg");
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center; }
+
+.menu {
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fafafa;
+  padding: 0 40px 40px 40px; }
+
+.vegetarian-pizza {
+  width: 100%; }
+
+.lunch-menu .type-pizza-title, .salad-menu .type-pizza-title, .fast-food-menu .type-pizza-title {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 27px; }
+
+.pizza-item, .type-pizza-title, .lunch-item, .salat-item, .fast-food-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid #fafafa; }
+  .pizza-item h3, .type-pizza-title h3, .lunch-item h3, .salat-item h3, .fast-food-item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 7px 0;
+    color: #ff6600; }
+  .pizza-item p, .type-pizza-title p, .lunch-item p, .salat-item p, .fast-food-item p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 3px 0 7px 0; }
+
+.pizza-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ff6600; }
+  .pizza-title h3 {
+    font-size: 26px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px #000000;
+    letter-spacing: 3px; }
+  .pizza-title p {
+    font-size: 18px; }
+
+.price-pizza {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%; }
+  .price-pizza p {
+    width: 33%;
+    font-size: 20px;
+    font-weight: 500;
+    width: 33%;
+    text-align: center; }
+  .price-pizza p:nth-child(2) {
+    text-shadow: 1px 1px 2px #ffffff; }
+
+.type-pizza-title > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.type-pizza-title img {
+  width: 52px;
+  height: 52px; }
+
+.type-pizza-title h3 {
+  margin-right: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px #000000;
+  letter-spacing: 3px; }
+
+.pizza-size {
+  width: 25%; }
+  .pizza-size div {
+    text-align: center;
+    width: 33%; }
+  .pizza-size p {
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500; }
+
+.type-pizza {
+  margin-bottom: 40px; }
+
+.ingredients-and-sauce {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .ingredients-and-sauce p {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 500; }
+  .ingredients-and-sauce .sauce, .ingredients-and-sauce .ingredients {
+    width: 50%; }
+  .ingredients-and-sauce .ingredients {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    text-align: center; }
+    .ingredients-and-sauce .ingredients img {
+      width: 42px;
+      height: 42px; }
+
+.ingredients-pizza-size div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .ingredients-pizza-size div img {
+    margin-right: 10px; }
+
+.sauce {
+  text-align: center; }
+  .sauce img {
+    width: 40%;
+    -webkit-border-radius: 20px;
+            border-radius: 20px; }
+  .sauce h3 {
+    color: #ff6600; }
+
+.ingredients-and-sauce-wrapper {
+  margin-bottom: 40px; }
+
+.pizza-box-wrapeer {
+  text-align: center;
+  border: 1px solid #fafafa;
+  margin-top: 20px; }
+  .pizza-box-wrapeer h3 {
+    color: #ff6600; }
+
+.pizza-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+  .pizza-box img {
+    width: 42px;
+    height: 42px; }
+  .pizza-box p {
+    font-size: 20px;
+    font-weight: 500; }
+
+.price-lunch p, .price-salat p, .price-fast-food p {
+  font-size: 20px;
+  font-weight: 500; }
+
+.fast-food-menu {
+  padding-top: 20px; }
+
+.title-red {
+  color: #ff1414; }
