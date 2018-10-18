@@ -1,44 +1,9 @@
-@font-face {
-  font-family: "RobotoRegular";
-  src: url("../fonts/Roboto/Roboto-Regular.ttf");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/Open_Sans/OpenSans-Bold.ttf");
-  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf"); }
-
-@font-face {
-  font-family: "Myriad";
-  src: url("../fonts/Myriad Pro Regular/Myriad Pro Regular.ttf");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "GothamBold";
-  src: url("../fonts/Gotham Bold Regular/Gotham Bold Regular.ttf");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: "GothamMedium";
-  src: url("../fonts/Gotham Medium Regular/Gotham Medium Regular.ttf");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "GothamBook";
-  src: url("../fonts/Gotham Book Regular/Gotham Book Regular.otf");
-  font-weight: normal;
-  font-style: normal; }
-
 body {
   margin: 0;
   padding: 0; }
 
 .wrapper {
-  background-image: url("/img/pizza-3007395_1920.jpg");
+  background-image: url("../img/pizza-3007395_1920.jpg");
   -webkit-background-size: 100% 100%;
           background-size: 100%;
   background-repeat: no-repeat;
