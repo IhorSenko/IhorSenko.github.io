@@ -226,8 +226,7 @@ body {
   }
 @media screen and (max-width: 1024px) {
   .wrapper {
-    -webkit-background-size: 0 0;
-            background-size: 0; }
+    background-image: none; }
   .mobile-bg {
     display: block;
     position: fixed;
