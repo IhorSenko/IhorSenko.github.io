@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0; }
 .mobile-bg {
-    display: block;
     position: fixed;
     z-index: -1;
     width: 100%;
@@ -224,6 +223,9 @@ body {
 .title-red {
   color: #ff0000; }
 @media screen and (max-width: 1024px) {
+  .mobile-bg {
+    -webkit-background-size: cover;
+    background-size: cover;}
   .menu {
     width: 100%;
     background: rgba(0, 0, 0, 0.75);
