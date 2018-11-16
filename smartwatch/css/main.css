@@ -360,6 +360,10 @@ img:focus {
 .tabs__caption {
   border-bottom: 3px solid #ffffff; }
   .tabs__caption li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -868,10 +872,9 @@ img:focus {
     .baner-price del {
       font-size: 24px; }
   .baner-title-bg {
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    bottom: 30px; }
+    margin: 20px 0;
+    position: relative;
+    z-index: 1; }
     .baner-title-bg .baner-title {
       text-align: center;
       padding: 20px;
@@ -911,4 +914,12 @@ img:focus {
   .form-img-bg {
     display: none; }
   #email-description {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  .coments-wrapper .slick-prev, .coments-wrapper .slick-next {
+    left: 7%; }
+  .smartwatch-img {
+    position: absolute; }
+  .watch-functions img {
+    width: 80px; }
+  .contacts #call-form {
+    width: 200%; } }
