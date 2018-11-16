@@ -28,7 +28,8 @@ $('.slider-for').slick({
   });
   $('.coments-slide').slick({
     slidesToShow: 3,
-    vertical: true
+    vertical: true,
+    draggable: false
   });
   $('.coments-slide .slick-current').next().addClass('border-slide');
   $('.coments-slide .slick-prev, .coments-slide .slick-next').on("click", function(){

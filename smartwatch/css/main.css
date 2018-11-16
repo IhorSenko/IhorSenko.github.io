@@ -872,12 +872,13 @@ img:focus {
     .baner-price del {
       font-size: 24px; }
   .baner-title-bg {
-    margin: 20px 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
     position: relative;
     z-index: 1; }
     .baner-title-bg .baner-title {
       text-align: center;
-      padding: 20px;
+      padding: 20px 0;
       line-height: 20px; }
       .baner-title-bg .baner-title h3 {
         font-size: 14px; }
@@ -886,11 +887,13 @@ img:focus {
         font-size: 14px; }
   .how-to-buy-step::before {
     display: none; }
+  .how-to-buy-step p {
+    font-size: 9px; }
   .wrapper-baner {
     background-position: -120px; }
     .wrapper-baner img {
-      width: 400%;
-      margin-left: -200%; }
+      width: 450%;
+      margin-left: -225%; }
   .watch-functions div {
     width: 30.33%; }
   .watch-functions h3 {
@@ -899,6 +902,8 @@ img:focus {
     margin: 20px 0; }
   .tabs__caption li {
     width: 33.33%; }
+    .tabs__caption li h3 {
+      font-size: 9px; }
   .what-wotch-description {
     margin-bottom: 180px; }
   .what-wotch-img {
