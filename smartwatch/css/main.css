@@ -15,6 +15,38 @@ a {
 img:focus {
   outline: none; }
 
+#btn-top {
+  display: none;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 30px;
+  right: 30px;
+  background: #e3e3e5;
+  -webkit-box-shadow: 0 0 10px #9e08ff;
+          box-shadow: 0 0 10px #9e08ff;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  z-index: 100; }
+  #btn-top div {
+    height: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #btn-top img {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
 .wrapper {
   width: 100%; }
 
@@ -28,20 +60,21 @@ img:focus {
 .logo a {
   display: block; }
 
-.menu {
+.menu nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .menu a {
-    font-size: 12px;
-    text-transform: uppercase; }
-  .menu a:hover {
-    color: #9e08ff; }
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
+.menu a {
+  font-size: 12px;
+  text-transform: uppercase; }
+
+.menu a:hover {
+  color: #9e08ff; }
 
 .contacts {
   display: -webkit-box;
@@ -83,6 +116,8 @@ img:focus {
     padding: 30px;
     -webkit-border-radius: 12px;
             border-radius: 12px; }
+    .contacts #call-form div:first-child {
+      position: relative; }
     .contacts #call-form input {
       padding: 0;
       text-align: center; }
@@ -664,7 +699,7 @@ img:focus {
 .form-img-bg img {
   float: right; }
 
-#mail-form input, #mail-form textarea, #call-form input, #call-form textarea {
+#mail-form input, #mail-form textarea, #call-form input, #call-form textarea, #form-Payment input, #form-Payment textarea {
   width: 100%;
   height: 40px;
   border: none;
@@ -677,19 +712,19 @@ img:focus {
   line-height: 31px;
   text-transform: uppercase;
   letter-spacing: 1.2px; }
-  #mail-form input[type="email"], #mail-form textarea[type="email"], #call-form input[type="email"], #call-form textarea[type="email"] {
+  #mail-form input[type="email"], #mail-form textarea[type="email"], #call-form input[type="email"], #call-form textarea[type="email"], #form-Payment input[type="email"], #form-Payment textarea[type="email"] {
     margin: 30px 0; }
-  #mail-form input::-webkit-input-placeholder, #mail-form textarea::-webkit-input-placeholder, #call-form input::-webkit-input-placeholder, #call-form textarea::-webkit-input-placeholder {
+  #mail-form input::-webkit-input-placeholder, #mail-form textarea::-webkit-input-placeholder, #call-form input::-webkit-input-placeholder, #call-form textarea::-webkit-input-placeholder, #form-Payment input::-webkit-input-placeholder, #form-Payment textarea::-webkit-input-placeholder {
     color: #cac6c6; }
-  #mail-form input::-moz-placeholder, #mail-form textarea::-moz-placeholder, #call-form input::-moz-placeholder, #call-form textarea::-moz-placeholder {
+  #mail-form input::-moz-placeholder, #mail-form textarea::-moz-placeholder, #call-form input::-moz-placeholder, #call-form textarea::-moz-placeholder, #form-Payment input::-moz-placeholder, #form-Payment textarea::-moz-placeholder {
     color: #cac6c6; }
-  #mail-form input:-ms-input-placeholder, #mail-form textarea:-ms-input-placeholder, #call-form input:-ms-input-placeholder, #call-form textarea:-ms-input-placeholder {
+  #mail-form input:-ms-input-placeholder, #mail-form textarea:-ms-input-placeholder, #call-form input:-ms-input-placeholder, #call-form textarea:-ms-input-placeholder, #form-Payment input:-ms-input-placeholder, #form-Payment textarea:-ms-input-placeholder {
     color: #cac6c6; }
-  #mail-form input::-ms-input-placeholder, #mail-form textarea::-ms-input-placeholder, #call-form input::-ms-input-placeholder, #call-form textarea::-ms-input-placeholder {
+  #mail-form input::-ms-input-placeholder, #mail-form textarea::-ms-input-placeholder, #call-form input::-ms-input-placeholder, #call-form textarea::-ms-input-placeholder, #form-Payment input::-ms-input-placeholder, #form-Payment textarea::-ms-input-placeholder {
     color: #cac6c6; }
-  #mail-form input::placeholder, #mail-form textarea::placeholder, #call-form input::placeholder, #call-form textarea::placeholder {
+  #mail-form input::placeholder, #mail-form textarea::placeholder, #call-form input::placeholder, #call-form textarea::placeholder, #form-Payment input::placeholder, #form-Payment textarea::placeholder {
     color: #cac6c6; }
-  #mail-form input[type="submit"], #mail-form textarea[type="submit"], #call-form input[type="submit"], #call-form textarea[type="submit"] {
+  #mail-form input[type="submit"], #mail-form textarea[type="submit"], #call-form input[type="submit"], #call-form textarea[type="submit"], #form-Payment input[type="submit"], #form-Payment textarea[type="submit"] {
     background-color: #9e08ff;
     -webkit-border-radius: 18px;
             border-radius: 18px;
@@ -698,7 +733,7 @@ img:focus {
     padding: 0;
     border: none; }
 
-#mail-form textarea, #call-form textarea {
+#mail-form textarea, #call-form textarea, #form-Payment textarea {
   width: 100%;
   resize: none;
   height: 112px;
@@ -737,8 +772,178 @@ img:focus {
     text-transform: uppercase;
     letter-spacing: 1.4px; }
 
+.bay-wrapper {
+  background-color: rgba(237, 237, 240, 0.9);
+  min-height: 100vh; }
+  .bay-wrapper .regulation {
+    margin-top: 30px;
+    color: #898181; }
+  .bay-wrapper .gear-img {
+    text-align: center; }
+  .bay-wrapper small {
+    font-size: 13px; }
+  .bay-wrapper h3, .bay-wrapper h2 {
+    margin-top: 15px; }
+    .bay-wrapper h3 span, .bay-wrapper h2 span {
+      color: #9e08ff;
+      margin-left: 10px; }
+  .bay-wrapper #form-Payment {
+    margin-top: 15px; }
+    .bay-wrapper #form-Payment img {
+      width: 80%; }
+    .bay-wrapper #form-Payment input {
+      margin: 15px 0; }
+    .bay-wrapper #form-Payment input[type="submit"] {
+      margin: 0; }
+    .bay-wrapper #form-Payment .radio-pay {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .bay-wrapper #form-Payment .radio-pay input {
+        margin: 15px 0;
+        height: 20px;
+        width: 20px; }
+    .bay-wrapper #form-Payment .title {
+      margin-bottom: 15px; }
+  .bay-wrapper .radio-pay {
+    background-color: #fff;
+    display: block;
+    margin: 30px 0;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    position: relative; }
+    .bay-wrapper .radio-pay label {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      padding: 13px 30px;
+      width: 100%;
+      display: block;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      text-align: left;
+      color: #3C454C;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      -webkit-transition: color 200ms ease-in;
+      -o-transition: color 200ms ease-in;
+      transition: color 200ms ease-in;
+      overflow: hidden; }
+      .bay-wrapper .radio-pay label:before {
+        width: 10px;
+        height: 10px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        content: '';
+        background-color: #9e08ff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%) scale3d(1, 1, 1);
+                transform: translate(-50%, -50%) scale3d(1, 1, 1);
+        -webkit-transition: all 600ms cubic-bezier(0.4, 0, 0.2, 1);
+        -o-transition: all 600ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 600ms cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0;
+        z-index: -1; }
+      .bay-wrapper .radio-pay label:after {
+        width: 32px;
+        height: 32px;
+        content: '';
+        border: 2px solid #D1D7DC;
+        background-color: #fff;
+        background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+        background-repeat: no-repeat;
+        background-position: 2px 3px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        z-index: 2;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        cursor: pointer;
+        -webkit-transition: all 200ms ease-in;
+        -o-transition: all 200ms ease-in;
+        transition: all 200ms ease-in; }
+    .bay-wrapper .radio-pay input:checked ~ label {
+      color: #ffffff; }
+      .bay-wrapper .radio-pay input:checked ~ label:before {
+        -webkit-transform: translate(-50%, -50%) scale3d(56, 56, 1);
+                transform: translate(-50%, -50%) scale3d(56, 56, 1);
+        opacity: 1; }
+      .bay-wrapper .radio-pay input:checked ~ label:after {
+        background-color: #9e08ff;
+        border-color: #ffffff; }
+    .bay-wrapper .radio-pay input {
+      width: 32px;
+      height: 32px;
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1;
+      z-index: 2;
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      cursor: pointer;
+      visibility: hidden; }
+
 .btn-menu {
   display: none; }
+
+.btn-close {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  top: -30px;
+  right: -30px;
+  background: #fff;
+  -webkit-border-radius: 15px;
+          border-radius: 15px; }
+  .btn-close span::before, .btn-close span::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -12px;
+    width: 24px;
+    height: 2px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    background: #9e08ff;
+    content: "";
+    display: block; }
+  .btn-close span::before {
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .btn-close span::after {
+    -webkit-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+            transform: translateY(5px);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
 
 @media screen and (max-width: 1024px) {
   .btn-menu {
@@ -861,6 +1066,8 @@ img:focus {
   .networking h3 {
     margin-bottom: 30px; }
   .networking img {
+    display: none; }
+  .gear-img {
     display: none; } }
 
 @media screen and (max-width: 576px) {
@@ -897,7 +1104,9 @@ img:focus {
   .watch-functions div {
     width: 30.33%; }
   .watch-functions h3 {
-    font-size: 10px; }
+    font-size: 9px; }
+  .watch-functions img {
+    width: 80px; }
   .slider-nav-wrapper {
     margin: 20px 0; }
   .tabs__caption li {
@@ -924,7 +1133,10 @@ img:focus {
     left: 7%; }
   .smartwatch-img {
     position: absolute; }
-  .watch-functions img {
-    width: 80px; }
   .contacts #call-form {
     width: 200%; } }
+
+@media screen and (max-width: 360px) {
+  .wrapper-baner img {
+    width: 480%;
+    margin-left: -240%; } }

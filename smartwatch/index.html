@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <title>Smartwattch</title>
 </head>
 <body>
-<div class="container">
+<div id="btn-top">
+    <div><a href=".header"><img src="./img/arrow_icon.png" alt="arrow_icon"></a></div>
+</div>
+<header class="container">
     <div class="row align-items-center header">
             <div class="logo col-3 col-xl-2">
                 <a href="index.html"><img src="./img/logo.svg" alt=""></a>
@@ -24,7 +26,6 @@
                     <a href=".watch">opis</a>
                     <a href=".wrapper-specification">specyfikacja</a>
                     <a href=".what-wotch">możliwoci</a>
-                    <a href="">dostawa</a>
                     <a href=".coments-wrapper">opinia</a>
                     <a href=".contacts-form-wrapper">kontakty</a>
                 </nav>
@@ -37,6 +38,7 @@
                 </div>
                 <a class="btn call-my" href="#">zamów rozmowę</a>
                     <form action="call.php" method="POST" name="call" id="call-form">
+                        <div><a href="#" class="btn-close"><span></span></a></div>
                         <div><input type="text" name="" id="" placeholder="Twoje imię" required min="3"></div>
                         <div><input type="email" name="" id="" placeholder="twoj adres email" required></div>
                         <div class="div"><input type="tel" name="" id="" placeholder="numer telefonu" required></div>
@@ -44,7 +46,8 @@
                     </form>
             </div>
     </div>
-</div>
+</header>
+<main>
 <div class="wrapper-baner">
     <div class="container">
         <div class="row align-items-md-center align-items-start">
@@ -52,7 +55,7 @@
                 <div class="baner-title">
                     <h3>nowość ze świata zegarków</h3>
                     <p>Bądź na bieżąco z nowymi trendami, ty warty tego</p>
-                    <a href="#">chcę ten dzegarek!</a>
+                    <a href="bay.html">chcę ten dzegarek!</a>
                 </div>
             </div>
             <div class="smartwatch-img col-3 col-md-3 order-0 order-md-2"><img src="./img/dzegarek.png" alt=""></div>
@@ -120,7 +123,7 @@
                     <h3>Funkcja Always-on-Display</h3>
                 </div>
             </div>
-            <div class="col-6 offset-3 col-md-4 col-offset-md-5 offset-lg-2 btn-order"><a href="#"><span></span><p>zamówić</p></a></div>
+            <div class="col-6 offset-3 col-md-4 col-xl-3 col-offset-md-5 offset-lg-2 btn-order"><a href="bay.html"><span></span><p>zamówić</p></a></div>
         </div>
 </div>
 <div class="wrapper-specification">
@@ -386,12 +389,13 @@
         </div>
     </div>
 </div>
+</main>
 <footer class="footer">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <h3>uzyskać zniżkę <span>50 zł</span> na zakup drugiego produktu</h3>
-                <a href="#">chcę ten dzegarek!</a>
+                <a href="bay.html">chcę ten dzegarek!</a>
             </div>
         </div>
     </div>
